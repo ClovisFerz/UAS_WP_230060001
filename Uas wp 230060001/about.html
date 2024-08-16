@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header-content {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .site-name {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .about {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .about h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .accordion {
+            background-color: #eee;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .accordion-button {
+            background-color: #ccc;
+            color: #333;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .accordion-button:hover {
+            background-color: #ddd;
+        }
+
+        .accordion-content {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+
+        .accordion-content p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="site-name">Creative Solutions</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h1>About Us</h1>
+            <p>We are a creative agency dedicated to bringing your ideas to life. With a team of skilled professionals, we turn concepts into impactful designs.</p>
+
+            <div class="accordion">
+                <button class="accordion-button">Our Mission</button>
+                <div class="accordion-content">
+                    <p>Our mission is to deliver exceptional creative solutions that empower businesses to thrive in the digital age. We aim to combine innovation with practicality to create designs that make a difference.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-button">Our Team</button>
+                <div class="accordion-content">
+                    <p>Our team consists of talented designers, developers, and strategists with diverse expertise. Each member brings a unique perspective and skill set to ensure the best outcomes for our clients.</p>
+                </div>
+            </div>
+            <div class="accordion">
+                <button class="accordion-button">Our Values</button>
+                <div class="accordion-content">
+                    <p>We value creativity, integrity, and collaboration. Our approach is centered around understanding our clients' needs and delivering results that exceed expectations while maintaining transparency and respect.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Accordion
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+
+                // Toggle the accordion content
+                if (accordionContent.style.display === "block") {
+                    accordionContent.style.display = "none";
+                } else {
+                    document.querySelectorAll('.accordion-content').forEach(content => {
+                        content.style.display = "none";
+                    });
+                    accordionContent.style.display = "block";
+                }
+            });
+        });
+    </script>
+</body>
+</html>

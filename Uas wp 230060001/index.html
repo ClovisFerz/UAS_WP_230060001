@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    /* Tabel Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Card Styling */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.card-content p {
+    margin: 0;
+    color: #555;
+}
+
+</style>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="site-name">Creative Solutions</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="slideshow">
+                <div class="slides fade">
+                    <img src="img/slide 1.jpg" alt="Slide 1">
+                </div>
+                <div class="slides fade">
+                    <img src="img/slide 2.jpg" alt="Slide 2">
+                </div>
+                <div class="slides fade">
+                    <img src="img/slide 3.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my work and what I can offer.</p>
+        </section>
+
+        <!-- Tabel Karya -->
+        <section class="portfolio">
+            <h2>My Projects</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Project A</td>
+                        <td>Project A is a comprehensive website redesign for a local business. The project included developing a modern, responsive layout, optimizing user experience, and integrating e-commerce functionalities. We focused on creating a seamless and engaging user interface to increase customer engagement and sales.</td>
+                        <td>January 2024</td>
+                        <td><a href="projectA.html">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>Project B</td>
+                        <td>Project B is an innovative mobile application designed for managing personal finances. This project involved creating a user-friendly interface with features for budgeting, expense tracking, and financial goal setting. The app integrates with various banking systems to provide real-time financial insights and help users stay on top of their finances.</td>
+                        <td>February 2024</td>
+                        <td><a href="projectB.html">View</a></td>
+                    </tr>
+                    <tr>
+                        <td>Project C</td>
+                        <td>Project C is an engaging e-learning platform for interactive online courses. We developed a responsive design with a focus on user engagement and ease of use. The platform features multimedia content, quizzes, and progress tracking to enhance the learning experience for users. It is designed to be accessible from various devices to reach a wider audience.</td>
+                        <td>March 2024</td>
+                        <td><a href="projectC.html">View</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="portfolio">
+            <h2>Featured Work</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="img/projectA.jpg" alt="Project A">
+                    <div class="card-content">
+                        <h3>Project A</h3>
+                        <p>Project A is a comprehensive website redesign for a local business. It involved developing a modern, responsive layout, optimizing user experience, and integrating e-commerce functionalities.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/projectB.jpg" alt="Project B">
+                    <div class="card-content">
+                        <h3>Project B</h3>
+                        <p>Project B is an innovative mobile application for managing personal finances. It offers budgeting, expense tracking, and financial goal setting features.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/projectC.jpg" alt="Project C">
+                    <div class="card-content">
+                        <h3>Project C</h3>
+                        <p>Project C is an e-learning platform designed to provide interactive online courses with multimedia content and progress tracking features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Creative Solutions. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
